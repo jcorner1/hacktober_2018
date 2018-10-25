@@ -1,0 +1,62 @@
+Git Commands:
+
+Repository Commands
+1) git clone <web address of forked repo>
+- use this command to clone a repo to you local computer
+
+2) git remote add upstream <web address of original repo>
+- use this to add the upstream repo
+
+Making Branches:
+1)git checkout -b <name>
+- use to create a new branch of the repo
+
+2) git checkout <name>
+- use to switch between different branches
+
+3) git branch
+- use to see the brances that are within the repo, will also show current working branch
+
+Renaming Brnaches: 
+1) git branch -m <new name>
+- use to rename current working branch
+
+2) git branch -m <oldname> <newname>
+- rename another branch while on a different branch
+
+3) git push origin <oldname> <newname>
+- deletes old branch name and uploads new name online
+
+Deleting Branches:
+1) git push --delete origin <name>
+- deletes branch online
+
+2) git branch -D <name>
+- locally deletes branch
+
+Commits to Repository:
+1) git add <filename>
+- use this command to add a file from your local drive to your online repo
+
+2) git commit -m 'commit message'
+- use to add comment about the commit
+
+3) git push origin <branch>
+- use this to push the file or other changes you have made to the repo to the online repo
+
+Changing Commit Messages:
+1) git commit --amend
+- changes most rcent commit message 
+
+2) git rebase -i HEAD~n
+- changes the last n amount of commit messages
+
+3) git push --force origin <name>
+- pushes new commit message online 
+
+After Pull Request:
+1) git pull upstream master
+- pulls upstream files to local drive
+
+2) git push origin master
+- pushes upstream changes to the cloned repo and updates so they are both the same
